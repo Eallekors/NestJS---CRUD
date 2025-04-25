@@ -1,0 +1,24 @@
+@import './base.css';
+
+#app {
+  max-width: 100%;  /* Changed from 1280px to use full width */
+  margin: 0 auto;
+  padding: 0;       /* Removed padding to allow your App.vue container to control spacing */
+  font-weight: normal;
+}
+
+a,
+.green {
+  text-decoration: none;
+  color: hsla(160, 100%, 37%, 1);
+  transition: 0.4s;
+  padding: 3px;
+}
+
+@media (hover: hover) {
+  a:hover {
+    background-color: hsla(160, 100%, 37%, 0.2);
+  }
+}
+
+/* Removed the problematic media query that was forcing a 2-column layout and centering content */
